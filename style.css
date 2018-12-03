@@ -73,6 +73,25 @@
   background: #eeeeee;
 }
 
+
+
+.bellcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  background: #fff;
+  border-radius: 50%
+}
+
+.bellcontainer i {
+  color: #9de1fe;
+  font-size: 20px;
+
+}
+
 .namemessage, .headerrhticons {
   float: left;
 }
@@ -100,6 +119,12 @@
   color: #4b4b4b;
 }
 
+.namemessageimg {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 .namemessage img {
   height: 40px;
   border-radius: 50%;
@@ -119,9 +144,28 @@
 }
 
 .notifications {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 15%;
   background: #9de1fe;
+}
+
+.notificationstext {
+  margin-left: 20px;
+}
+
+.notificationstext h3 {
+  font-size: 15px;
+}
+
+.notificationstext a {
+  text-decoration: none;
+  color: black;
+}
+
+.notificationstext span {
+  font-size: 13px;
 }
 
 .search {
