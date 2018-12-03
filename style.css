@@ -23,13 +23,45 @@
 .headermenulft {
   width: 100%;
   height: 10%;
-  background-color: brown;
+  background-color: #eeeeee;
+}
+
+.avatarimage {
+  width: 20%;
+  height: 100%;
+  background: brown;
+}
+
+.avatarimage, .headerlfticons {
+  float: left;
+}
+
+.headerlfticons {
+  width: 80%;
+  height: 100%;
+  background: lightgrey;
 }
 
 .headermenurht {
   width: 100%;
   height: 10%;
-  background-color: lightcoral;
+  background-color: #eeeeee;
+}
+
+.namemessage {
+  width: 70%;
+  height: 100%;
+  background: red;
+}
+
+.namemessage, .headerrhticons {
+  float: left;
+}
+
+.headerrhticons {
+  width: 30%;
+  height: 100%;
+  background: yellow
 }
 
 .textdisplay {
@@ -47,7 +79,7 @@
 .notifications {
   width: 100%;
   height: 15%;
-  background: black;
+  background: #9de1fe;
 }
 
 .search {
