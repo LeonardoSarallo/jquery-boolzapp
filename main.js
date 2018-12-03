@@ -1,21 +1,25 @@
 $(document).ready(function() {
 
   $('#invio').click(function() {
-    var chat = $('.chat');
-    var text = $('#textval').val();
-    var messaggioClonato = $('.template .chat').clone();
+
+   var text = $('#textval').val();
+   var messaggioClonato = $('.template .chat').clone();
    messaggioClonato.text(text);
    $('.textdisplay').append(messaggioClonato);
    $('.chat').show();
    $('#textval').val('');
-   console.log(messaggioClonato);
+   console.log($('.chat'));
 
 
+   // if (text == 0) {
+   //   $('.chat').hide();
+   //   console.log(chat);
+   //
+   // }
+   // else {
+   //   $('.chat').show();
+   // }
 
-   if (chat.length == 0) {
-     chat.hide();
-     console.log(messaggioClonato);
-   }
 
   });
 
