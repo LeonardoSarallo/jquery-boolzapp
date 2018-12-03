@@ -2,9 +2,13 @@ $(document).ready(function() {
 
   $('#invio').click(function() {
     var text = $('#textval').val();
+    var messaggioClonato = $('.textdisplay .chat').clone(1);
 
-    $('.chat').append(text);
-    
+    messaggioClonato.text(text);
+
+   $('.textdisplay').append(messaggioClonato);
+   $('#textval').val('')
+
   });
 
 
