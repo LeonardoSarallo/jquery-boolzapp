@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans SC', sans-serif;
+
 }
 
 .leftmenu, .rightmenu {
@@ -27,9 +29,11 @@
 }
 
 .avatarimage {
+  display: flex;
+  align-items: center;
   width: 60%;
   height: 100%;
-  background: brown;
+  background: #eeeeee;
 }
 
 .avatarimage, .headerlfticons {
@@ -43,25 +47,39 @@
   justify-content: space-around;
   width: 40%;
   height: 100%;
-  background: lightgrey;
+  background: #eeeeee;
 
 }
 
+
+.avatarimage img {
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
 .headermenurht {
   width: 100%;
   height: 10%;
   background-color: #eeeeee;
+  border-left: 1px solid lightgrey;
 
 }
 
 .namemessage {
+  display: flex;
+  align-items: center;
   width: 80%;
   height: 100%;
-  background: red;
+  background: #eeeeee;
 }
 
 .namemessage, .headerrhticons {
   float: left;
+}
+
+.namemessage h2 {
+  font-size: 15px;
+  margin-left: 20px;
 }
 
 .headerrhticons {
@@ -74,15 +92,18 @@
   background: #eeeeee;
 }
 
-.headerrhticons, .headerlfticons a i {
+.headerrhticons  a i {
   color: #4b4b4b;
 }
 
-.userimage {
-  width: 50px;
-  height: 50px;
+.headerlfticons  a i {
+  color: #4b4b4b;
+}
 
-
+.namemessage img {
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
 }
 
 .textdisplay {
