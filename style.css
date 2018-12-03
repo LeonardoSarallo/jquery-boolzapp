@@ -56,6 +56,7 @@
   height: 40px;
   border-radius: 50%;
   margin-left: 20px;
+  cursor: pointer;
 }
 .headermenurht {
   width: 100%;
@@ -129,6 +130,7 @@
   height: 40px;
   border-radius: 50%;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .textdisplay {
@@ -169,9 +171,20 @@
 }
 
 .search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
   height: 7%;
-  background-color: blue;
+  background-color: #f9f9f9;
+}
+
+.search input {
+  width: 95%;
+  height: 80%;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  outline: none;
 }
 
 .messages {
