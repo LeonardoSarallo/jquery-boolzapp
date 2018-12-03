@@ -238,6 +238,7 @@
 }
 
 .chat {
+  display: none;
   background: lightgreen;
   color: black;
   border-radius: 10px;
