@@ -27,7 +27,7 @@
 }
 
 .avatarimage {
-  width: 20%;
+  width: 60%;
   height: 100%;
   background: brown;
 }
@@ -37,19 +37,25 @@
 }
 
 .headerlfticons {
-  width: 80%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
   height: 100%;
   background: lightgrey;
+
 }
 
 .headermenurht {
   width: 100%;
   height: 10%;
   background-color: #eeeeee;
+
 }
 
 .namemessage {
-  width: 70%;
+  width: 80%;
   height: 100%;
   background: red;
 }
@@ -59,10 +65,24 @@
 }
 
 .headerrhticons {
-  width: 30%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
   height: 100%;
-  background: yellow;
-  
+  background: #eeeeee;
+}
+
+.headerrhticons, .headerlfticons a i {
+  color: #4b4b4b;
+}
+
+.userimage {
+  width: 50px;
+  height: 50px;
+
+
 }
 
 .textdisplay {
