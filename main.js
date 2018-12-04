@@ -19,9 +19,19 @@ $(document).ready(function() {
 
     },1000);
 
+  });
 
+  $('#search').click(function() {
+    var nameSearch = $('#searchinput').val();
+    $('li').each(function() {
+      var liText = $(this).text();
 
+      if (liText != nameSearch)
+      {
+        $(this).hide();
+      }
 
+    });
 
   });
 
