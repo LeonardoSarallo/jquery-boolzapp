@@ -248,3 +248,12 @@
 
 
 }
+
+.answer {
+  display: none;
+  background: #fff;
+  color: black;
+  border-radius: 10px;
+  font-size: 13px;
+  width: 200px;
+}

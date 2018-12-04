@@ -8,8 +8,16 @@ $(document).ready(function() {
    $('.textdisplay').append(messaggioClonato);
    $('.chat').show();
    $('#textval').val('');
-   console.log($('.chat'));
 
+   var rispostaClonata = $('.template .answer').clone();
+   rispostaClonata.text('ok');
+   $('.textdisplay').append(rispostaClonata);
+
+   setTimeout(function() {
+   $('.answer').show();
+   },1000);
+
+   // $('.answer').delay(1000).show();
 
    // if (text == 0) {
    //   $('.chat').hide();
@@ -22,6 +30,8 @@ $(document).ready(function() {
 
 
   });
+
+
 
 
 
