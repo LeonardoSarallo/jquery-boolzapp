@@ -135,7 +135,7 @@
   width: 100%;
   height: 80%;
   background-color: #e5ddd5;
-  background-image: url(https://web.whatsapp.com/img/8a055527b27b887521a9f084497d8879.png);
+  background-image: url(background-chat.png);
   opacity: 0.5;
 }
 
@@ -206,6 +206,7 @@
   justify-content: space-around;
   width: 100%;
   height: 7%;
+  border-bottom: 10px;
   background-color: #fff;
 }
 
@@ -233,9 +234,48 @@
 }
 
 .messages {
+  padding-top: 20px;
   width: 100%;
   height: 68%;
   background: white;
+  overflow-y: auto;
+}
+
+.idbox {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 15%;
+  margin-bottom: 10px;
+
+}
+
+.idname {
+  margin-left: 20px;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+}
+
+
+
+.orario {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 100%;
+}
+
+.orario span {
+  font-size: 12px;
+}
+
+
+.idimg img {
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+
 }
 
 .chat {
