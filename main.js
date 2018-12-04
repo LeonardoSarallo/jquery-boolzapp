@@ -17,19 +17,11 @@ $(document).ready(function() {
    $('.answer').show();
    },1000);
 
-   // $('.answer').delay(1000).show();
-
-   // if (text == 0) {
-   //   $('.chat').hide();
-   //   console.log(chat);
-   //
-   // }
-   // else {
-   //   $('.chat').show();
-   // }
 
 
   });
+
+  
 
 
 
