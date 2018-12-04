@@ -290,7 +290,7 @@
 
 .chat {
   float: right;
-  display: none;
+
   background: #D5F9BA;
   color: black;
   margin: 10px 0;
@@ -303,7 +303,7 @@
 
 .answer {
 
-  display: none;
+
   margin: 10px 0;
   background: #fff;
   color: black;
@@ -311,7 +311,11 @@
   font-size: 13px;
   width: 200px;
 }
+
 .clear {
-  
   clear: both;
+}
+
+.template {
+  display: none;
 }
