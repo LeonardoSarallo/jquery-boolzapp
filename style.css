@@ -5,6 +5,16 @@
   font-family: 'Noto Sans SC', sans-serif;
 
 }
+.clear1 {
+  clear: both;
+}
+.clear2 {
+  clear: both;
+}
+
+.template {
+  display: none;
+}
 
 .leftmenu, .rightmenu {
   float: left;
@@ -289,8 +299,8 @@
 }
 
 .chat {
+  max-width: 200px;
   float: right;
-
   background: #D5F9BA;
   color: black;
   margin: 10px 0;
@@ -303,19 +313,10 @@
 
 .answer {
 
-
   margin: 10px 0;
   background: #fff;
   color: black;
   border-radius: 10px;
   font-size: 13px;
   width: 200px;
-}
-
-.clear {
-  clear: both;
-}
-
-.template {
-  display: none;
 }

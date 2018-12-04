@@ -4,22 +4,21 @@ $(document).ready(function() {
 
    var text = $('#textval').val();
    var messaggioClonato = $('.template .chat').clone();
-   var clearTemplate = $('.template .clear');
+   var clearTemplate = $('.template .clear1').clone();
    messaggioClonato.text(text);
    $('.textdisplay').append(messaggioClonato);
    $('.textdisplay').append(clearTemplate);
-
-
-
    $('#textval').val('');
 
    setTimeout(function() {
      var rispostaClonata = $('.template .answer').clone();
-     var space = $('.template .clear');
+     var clearTemplate = $('.template .clear1').clone();
      rispostaClonata.text('ok');
      $('.textdisplay').append(rispostaClonata);
-     $('.textdisplay').append(space);
+     $('.textdisplay').append(clearTemplate);
+
     },1000);
+
 
 
 
