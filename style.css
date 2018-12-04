@@ -244,10 +244,19 @@
 .idbox {
   position: relative;
   display: flex;
+/*   padding: 5px 0; */
   width: 100%;
   height: 15%;
-  margin-bottom: 10px;
+  cursor: pointer;
 
+}
+
+.idbox:hover {
+  background: #B6B9BB;
+}
+
+.idimg, .idname, .orario {
+  margin-top: 10px;
 }
 
 .idname {
