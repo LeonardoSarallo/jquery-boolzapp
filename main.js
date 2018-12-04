@@ -54,10 +54,12 @@ $(document).ready(function() {
     $('li').each(function() {
       var liText = $(this).text();
 
-      if (liText != nameSearch)
+      if (nameSearch != liText)
       {
         $(this).hide();
       }
+      console.log(liText);
+      console.log(nameSearch);
 
     });
 
