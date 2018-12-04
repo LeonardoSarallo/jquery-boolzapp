@@ -7,21 +7,23 @@ $(document).ready(function() {
    messaggioClonato.text(text);
    $('.textdisplay').append(messaggioClonato);
    $('.chat').show();
+
    $('#textval').val('');
 
-   var rispostaClonata = $('.template .answer').clone();
-   rispostaClonata.text('ok');
-   $('.textdisplay').append(rispostaClonata);
-
    setTimeout(function() {
-   $('.answer').show();
+       var rispostaClonata = $('.template .answer').clone();
+       rispostaClonata.text('ok');
+       $('.textdisplay').append(rispostaClonata);
+       $('.answer').show();
+
    },1000);
+
 
 
 
   });
 
-  
+
 
 
 
