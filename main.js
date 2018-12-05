@@ -94,7 +94,7 @@ $(document).ready(function() {
       dropMenu.addClass('open');
     }
 
-    
+
 
   });
 
