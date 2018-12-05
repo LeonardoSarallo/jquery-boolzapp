@@ -304,14 +304,23 @@
 }
 
 .dropdownmenu {
+  display: none;
   z-index: 1;
   position: absolute;
-  width: 200px;
-  height:250px;
+  width: 280px;
+  height:200px;
   top: 60px;
-  left: 300px;
+  left: 130px;
+  padding: 10px 20px;
   background: red;
 }
+
+.dropmenuitem {
+  width: 100%;
+  height: calc(100% / 5);
+}
+
+
 
 .idimg img {
   height: 50px;
@@ -321,6 +330,7 @@
 }
 
 .chat {
+  position: relative;
   padding: 20px;
   max-width: 200px;
   max-height: 300px;
@@ -332,10 +342,10 @@
   font-size: 13px;
   width: 200px;
 
-
 }
 
 .answer {
+  position: relative;
   padding: 20px;
   max-width: 200px;
   max-height: 300px;
@@ -349,4 +359,18 @@
 
 .open {
   display: block;
+}
+
+
+.chat i {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+
+}
+
+.answer i {
+  position: absolute;
+  right: 10px;
+  top: 5px;
 }

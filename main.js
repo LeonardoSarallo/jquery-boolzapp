@@ -71,6 +71,7 @@ $(document).ready(function() {
 
   // Gestione dropdownmenu dei messaggi a sinistra
 
+
   $('.idbox').mouseenter(function() {
     var dropItem = $(this).children('.dropdownitem');
     dropItem.addClass('open');
@@ -81,5 +82,20 @@ $(document).ready(function() {
     dropItem.removeClass('open');
   });
 
+
+  $('.dropdownitem').click(function() {
+    var dropMenu = $(this).siblings('.dropdownmenu');
+
+
+    if (dropMenu.hasClass('open')) {
+      dropMenu.removeClass('open')
+    }
+    else {
+      dropMenu.addClass('open');
+    }
+
+    
+
+  });
 
 });
