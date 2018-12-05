@@ -371,6 +371,20 @@
 
 }
 
+.chatdropdown {
+  position: absolute;
+  width: 250px;
+  height:200px;
+  background: #fff;
+  padding: 10px 20px;
+}
+.chatdropdownitem {
+  height: calc(100% / 4);
+  width: 100%;
+
+}
+
+
 .answer i {
   display: none;
   position: absolute;

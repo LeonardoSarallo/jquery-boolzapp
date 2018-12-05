@@ -92,7 +92,7 @@ $(document).ready(function() {
 
 
     if (dropMenu.hasClass('open')) {
-      dropMenu.removeClass('open')
+      dropMenu.removeClass('open');
     }
     else {
       $('.dropdownmenu').removeClass('open');
@@ -103,6 +103,8 @@ $(document).ready(function() {
 
 
   });
+
+  
 
 
 
