@@ -49,27 +49,29 @@ $(document).ready(function() {
   });
 
 
-  $('#search').click(function() {
-    var nameSearch = $('#searchinput').val();
-    $('li').each(function() {
-      var liText = $(this).text();
+  // Gestisco search da tastiera
 
-      if (nameSearch != liText)
-      {
+
+  $('#searchinput').keyup(function() {
+    var valore = $(this).val().toLowerCase();
+    console.log(valore);
+    $('li').each(function() {
+      var name = $(this).find('#name').text().toLowerCase();
+
+
+      if (name.includes(valore)) {
+        $(this).show();
+      }
+      else {
         $(this).hide();
       }
-      console.log(liText);
-      console.log(nameSearch);
-
     });
 
   });
 
+  
 
 
-
-
-
-
+  });
 
 });
