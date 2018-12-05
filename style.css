@@ -303,6 +303,15 @@
   right: 15px;
 }
 
+.dropdownmenu {
+  z-index: 1;
+  position: absolute;
+  width: 200px;
+  height:250px;
+  top: 60px;
+  left: 300px;
+  background: red;
+}
 
 .idimg img {
   height: 50px;
