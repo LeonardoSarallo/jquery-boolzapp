@@ -364,7 +364,7 @@
 
 
 .chat i {
-
+  display: none;
   position: absolute;
   right: 10px;
   top: 5px;
@@ -372,7 +372,16 @@
 }
 
 .answer i {
+  display: none;
   position: absolute;
   right: 10px;
   top: 5px;
+}
+
+.chat:hover i {
+  display: block;
+}
+
+.answer:hover i {
+  display: block;
 }

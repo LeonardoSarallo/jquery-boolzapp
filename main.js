@@ -7,7 +7,7 @@ $(document).ready(function() {
    var text = $('#textval').val();
    var messaggioClonato = $('.template .chat').clone();
    var clearTemplate = $('.template .clear1').clone();
-   messaggioClonato.text(text);
+   messaggioClonato.children('.textmessage').text(text);
    $('.textdisplay').append(messaggioClonato);
    $('.textdisplay').append(clearTemplate);
    $('#textval').val('');
@@ -15,7 +15,7 @@ $(document).ready(function() {
    setTimeout(function() {
      var rispostaClonata = $('.template .answer').clone();
      var clearTemplate = $('.template .clear1').clone();
-     rispostaClonata.text('ok');
+     rispostaClonata.children('.textmessage').text('ok');
      $('.textdisplay').append(rispostaClonata);
      $('.textdisplay').append(clearTemplate);
 
@@ -47,6 +47,9 @@ $(document).ready(function() {
        },1000);
     }
   });
+
+
+
 
 
   // Gestisco search da tastiera
@@ -87,15 +90,20 @@ $(document).ready(function() {
     var dropMenu = $(this).siblings('.dropdownmenu');
 
 
+
     if (dropMenu.hasClass('open')) {
       dropMenu.removeClass('open')
     }
     else {
+      $('.dropdownmenu').removeClass('open');
       dropMenu.addClass('open');
+
     }
 
 
 
   });
+
+
 
 });
