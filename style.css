@@ -372,18 +372,37 @@
 }
 
 .chatdropdown {
+  display: none;
   position: absolute;
+  right: 10px;
+  top: 20px;
   width: 250px;
   height:200px;
   background: #fff;
   padding: 10px 20px;
+  box-shadow: 2px 2px 2px 2px lightgrey;
 }
 .chatdropdownitem {
+  height: calc(100% / 5);
+  width: 100%;
+
+}
+.answerdropdown {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 250px;
+  height:200px;
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+}
+.answerdropdownitem {
   height: calc(100% / 4);
   width: 100%;
 
 }
-
 
 .answer i {
   display: none;

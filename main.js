@@ -32,7 +32,7 @@ $(document).ready(function() {
       var text = $('#textval').val();
       var messaggioClonato = $('.template .chat').clone();
       var clearTemplate = $('.template .clear1').clone();
-      messaggioClonato.text(text);
+      messaggioClonato.children('.textmessage').text(text);
       $('.textdisplay').append(messaggioClonato);
       $('.textdisplay').append(clearTemplate);
       $('#textval').val('');
@@ -40,7 +40,7 @@ $(document).ready(function() {
       setTimeout(function() {
         var rispostaClonata = $('.template .answer').clone();
         var clearTemplate = $('.template .clear1').clone();
-        rispostaClonata.text('ok');
+        rispostaClonata.children('.textmessage').text('ok');
         $('.textdisplay').append(rispostaClonata);
         $('.textdisplay').append(clearTemplate);
 
@@ -104,7 +104,31 @@ $(document).ready(function() {
 
   });
 
-  
+
+  // Gestione dropdown messaggi chat principale
+
+  // $('').click(function() {
+  //   alert('ciao')
+  //   var dropMenuChat = $(this).siblings('.chatdropdown');
+  //
+  //
+  //
+  //   if (dropMenuChat.hasClass('open')) {
+  //     dropMenuChat.removeClass('open');
+  //   }
+  //   else {
+  //     $('.chatdropdown').removeClass('open');
+  //     dropMenuChat.addClass('open');
+  //
+  //   }
+  //
+  //
+  //
+  // });
+
+
+
+
 
 
 
