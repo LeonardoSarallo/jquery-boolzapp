@@ -23,7 +23,7 @@
 .leftmenu {
   width: 35%;
   height: 100vh;
-  background-color: red;
+
 }
 
 .rightmenu {
@@ -312,7 +312,8 @@
   top: 60px;
   left: 130px;
   padding: 10px 20px;
-  background: red;
+  background: #fff;
+  box-shadow: 2px 2px 2px 2px lightgrey;
 }
 
 .dropmenuitem {
