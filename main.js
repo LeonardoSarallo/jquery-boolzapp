@@ -69,9 +69,17 @@ $(document).ready(function() {
 
   });
 
-  
+  // Gestione dropdownmenu dei messaggi a sinistra
 
-
+  $('.idbox').mouseenter(function() {
+    var dropItem = $(this).children('.dropdownitem');
+    dropItem.addClass('open');
   });
+
+  $('.idbox').mouseleave(function() {
+    var dropItem = $(this).children('.dropdownitem');
+    dropItem.removeClass('open');
+  });
+
 
 });

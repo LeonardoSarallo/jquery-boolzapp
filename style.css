@@ -296,6 +296,13 @@
   font-size: 12px;
 }
 
+.dropdownitem {
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+}
+
 
 .idimg img {
   height: 50px;
@@ -329,4 +336,8 @@
   border-radius: 10px;
   font-size: 13px;
   width: 200px;
+}
+
+.open {
+  display: block;
 }
