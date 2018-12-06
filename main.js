@@ -104,13 +104,10 @@ $(document).ready(function() {
 
   });
 
-  //Gestione active onclickrightmenu
 
+  // Gestione scelta messaggi
   $('ul li').click(function() {
 
-    $('ul li').removeClass('active');
-
-    $(this).addClass('active');
 
     $('.textdisplay').removeClass('open');
 
@@ -122,6 +119,16 @@ $(document).ready(function() {
 
   });
 
+  //Gestione active onclickrightmenu
+
+  $('.idbox').click(function() {
+    $('.idbox').removeClass('active');
+
+    $(this).addClass('active');
+  });
+
+
+
 
   //Gestione dropdown messaggi chat principale
 
@@ -131,8 +138,6 @@ $(document).ready(function() {
   $(document).on('click','.chati', function() {
 
     var dropChat = $(this).siblings('.chatdropdown');
-
-
 
     if (dropChat.hasClass('open')) {
       dropChat.removeClass('open');
