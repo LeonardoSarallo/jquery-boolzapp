@@ -105,26 +105,24 @@ $(document).ready(function() {
   });
 
 
-  // Gestione dropdown messaggi chat principale
+  //Gestione dropdown messaggi chat principale
 
-  // $('').click(function() {
-  //   alert('ciao')
-  //   var dropMenuChat = $(this).siblings('.chatdropdown');
-  //
-  //
-  //
-  //   if (dropMenuChat.hasClass('open')) {
-  //     dropMenuChat.removeClass('open');
-  //   }
-  //   else {
-  //     $('.chatdropdown').removeClass('open');
-  //     dropMenuChat.addClass('open');
-  //
-  //   }
-  //
-  //
-  //
-  // });
+  $(document).on('click','#answerangle', function() {
+
+    var dropMenuAnswer = $(this).siblings('.answerdropdown');
+
+    if (dropMenuAnswer.hasClass('open')) {
+      dropMenuAnswer.removeClass('open');
+    }
+    else {
+      $('.answerdropdown').removeClass('open');
+      dropMenuAnswer.addClass('open');
+
+    }
+
+
+
+  });
 
 
 
