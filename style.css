@@ -269,7 +269,7 @@
 }
 
 .idbox:hover {
-  background: #B6B9BB;
+  background: #f4f5f5;
 }
 
 .idimg, .idname, .orario {
@@ -372,6 +372,7 @@
 }
 
 .chatdropdown {
+  z-index: 1;
   display: none;
   position: absolute;
   right: 10px;
@@ -385,6 +386,7 @@
 .chatdropdownitem {
   height: calc(100% / 5);
   width: 100%;
+  cursor: pointer;
 
 }
 .answerdropdown {
@@ -404,11 +406,20 @@
 
 }
 
-.answer i {
-  display: none;
+.chati {
   position: absolute;
   right: 10px;
   top: 5px;
+}
+
+.answeri {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.answeri i {
+  display: none;
 }
 
 .chat:hover i {

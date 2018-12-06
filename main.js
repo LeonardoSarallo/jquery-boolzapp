@@ -107,27 +107,55 @@ $(document).ready(function() {
 
   //Gestione dropdown messaggi chat principale
 
-  $(document).on('click','#answerangle', function() {
+  //Menu risposta
 
-    var dropMenuAnswer = $(this).siblings('.answerdropdown');
+  $(document).on('click','.answeri', function() {
 
-    if (dropMenuAnswer.hasClass('open')) {
-      dropMenuAnswer.removeClass('open');
-    }
-    else {
-      $('.answerdropdown').removeClass('open');
-      dropMenuAnswer.addClass('open');
 
-    }
+    // var dropMenuAnswer = $(this).siblings('.answerdropdown');
+    //
+    // if (dropMenuAnswer.hasClass('open')) {
+    //   dropMenuAnswer.removeClass('open');
+    // }
+    // else {
+    //   $('.answerdropdown').removeClass('open');
+    //   dropMenuAnswer.addClass('open');
+    //
+    // }
 
 
 
   });
 
 
+  //Menu ID
+  
+  $(document).on('click','.chati', function() {
+
+    var drop = $(this).siblings('.chatdropdown');
+    console.log(drop);
+
+    drop.toggle();
+
+    // if (drop.hasClass('open')) {
+    //   drop.removeClass('open');
+    // }
+    // else {
+    //   $('.chatdropdown').removeClass('open');
+    //   drop.addClass('open');
+    //
+    // }
+
+  });
+
+  $(document).on('click','.chatdelete', function() {
+
+    var deleteMessage = $(this).parent().parent();
+    deleteMessage.hide();
 
 
 
+  });
 
 
 });
