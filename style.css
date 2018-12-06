@@ -363,6 +363,9 @@
 }
 
 
+.active {
+  background: #E9EBEB;
+}
 .chat i {
   display: none;
   position: absolute;

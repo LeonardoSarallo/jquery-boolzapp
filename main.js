@@ -104,6 +104,15 @@ $(document).ready(function() {
 
   });
 
+  //Gestione active onclickrightmenu
+
+  $('.idbox').click(function() {
+    $('.idbox').removeClass('active');
+
+    $(this).addClass('active');
+
+  });
+
 
   //Gestione dropdown messaggi chat principale
 
@@ -129,11 +138,10 @@ $(document).ready(function() {
 
 
   //Menu ID
-  
+
   $(document).on('click','.chati', function() {
 
     var drop = $(this).siblings('.chatdropdown');
-    console.log(drop);
 
     drop.toggle();
 
