@@ -8,16 +8,16 @@ $(document).ready(function() {
    var messaggioClonato = $('.template .chat').clone();
    var clearTemplate = $('.template .clear1').clone();
    messaggioClonato.children('.textmessage').text(text);
-   $('.textdisplay').append(messaggioClonato);
-   $('.textdisplay').append(clearTemplate);
+   $('.textdisplay.open').append(messaggioClonato);
+   $('.textdisplay.open').append(clearTemplate);
    $('#textval').val('');
 
    setTimeout(function() {
      var rispostaClonata = $('.template .answer').clone();
      var clearTemplate = $('.template .clear1').clone();
      rispostaClonata.children('.textmessage').text('ok');
-     $('.textdisplay').append(rispostaClonata);
-     $('.textdisplay').append(clearTemplate);
+     $('.textdisplay.open').append(rispostaClonata);
+     $('.textdisplay.open').append(clearTemplate);
 
     },1000);
 
@@ -33,16 +33,16 @@ $(document).ready(function() {
       var messaggioClonato = $('.template .chat').clone();
       var clearTemplate = $('.template .clear1').clone();
       messaggioClonato.children('.textmessage').text(text);
-      $('.textdisplay').append(messaggioClonato);
-      $('.textdisplay').append(clearTemplate);
+      $('.textdisplay.open').append(messaggioClonato);
+      $('.textdisplay.open').append(clearTemplate);
       $('#textval').val('');
 
       setTimeout(function() {
         var rispostaClonata = $('.template .answer').clone();
         var clearTemplate = $('.template .clear1').clone();
         rispostaClonata.children('.textmessage').text('ok');
-        $('.textdisplay').append(rispostaClonata);
-        $('.textdisplay').append(clearTemplate);
+        $('.textdisplay.open').append(rispostaClonata);
+        $('.textdisplay.open').append(clearTemplate);
 
        },1000);
     }
@@ -150,9 +150,9 @@ $(document).ready(function() {
 
   $(document).on('click','.chati', function() {
 
-    var drop = $(this).siblings('.chatdropdown');
+    var dropChat = $(this).siblings('.chatdropdown');
 
-    drop.toggle();
+    dropChat.toggle();
 
     // if (drop.hasClass('open')) {
     //   drop.removeClass('open');
@@ -165,6 +165,8 @@ $(document).ready(function() {
 
   });
 
+  // Possibilità di eliminare chat ID
+
   $(document).on('click','.chatdelete', function() {
 
     var deleteMessage = $(this).parent().parent();
@@ -174,5 +176,34 @@ $(document).ready(function() {
 
   });
 
+  //Menu risposta
+
+  $(document).on('click','.answeri', function() {
+
+    var dropAnswer = $(this).siblings('.answerdropdown');
+
+    dropAnswer.toggle();
+
+    // if (drop.hasClass('open')) {
+    //   drop.removeClass('open');
+    // }
+    // else {
+    //   $('.chatdropdown').removeClass('open');
+    //   drop.addClass('open');
+    //
+    // }
+
+  });
+
+  //Possibilità di eliminare risposta
+
+  $(document).on('click','.answerdelete', function() {
+
+    var deleteMessageAnswer = $(this).parent().parent();
+    deleteMessageAnswer.hide();
+
+
+
+  });
 
 });
