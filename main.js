@@ -125,26 +125,6 @@ $(document).ready(function() {
 
   //Gestione dropdown messaggi chat principale
 
-  //Menu risposta
-
-  $(document).on('click','.answeri', function() {
-
-
-    // var dropMenuAnswer = $(this).siblings('.answerdropdown');
-    //
-    // if (dropMenuAnswer.hasClass('open')) {
-    //   dropMenuAnswer.removeClass('open');
-    // }
-    // else {
-    //   $('.answerdropdown').removeClass('open');
-    //   dropMenuAnswer.addClass('open');
-    //
-    // }
-
-
-
-  });
-
 
   //Menu ID
 
@@ -152,16 +132,17 @@ $(document).ready(function() {
 
     var dropChat = $(this).siblings('.chatdropdown');
 
-    dropChat.toggle();
 
-    // if (drop.hasClass('open')) {
-    //   drop.removeClass('open');
-    // }
-    // else {
-    //   $('.chatdropdown').removeClass('open');
-    //   drop.addClass('open');
-    //
-    // }
+
+    if (dropChat.hasClass('open')) {
+      dropChat.removeClass('open');
+      console.log('sona qua');
+    }
+    else {
+      $('.chatdropdown').removeClass('open');
+      dropChat.addClass('open');
+      console.log('sono li');
+    }
 
   });
 

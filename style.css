@@ -394,6 +394,11 @@
   padding: 10px 20px;
   box-shadow: 2px 2px 2px 2px lightgrey;
 }
+
+.chatdropdown.open {
+  display: block;
+}
+
 .chatdropdownitem {
   height: calc(100% / 5);
   width: 100%;
