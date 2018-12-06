@@ -111,6 +111,13 @@ $(document).ready(function() {
 
     $(this).addClass('active');
 
+    $('.textdisplay').removeClass('open');
+
+    var contactNumber = $(this).index();
+
+    $('.textdisplay').eq(contactNumber);
+    console.log($('.textdisplay').eq(contactNumber));
+
   });
 
 
