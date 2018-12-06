@@ -106,17 +106,19 @@ $(document).ready(function() {
 
   //Gestione active onclickrightmenu
 
-  $('.idbox').click(function() {
-    $('.idbox').removeClass('active');
+  $('ul li').click(function() {
+
+    $('ul li').removeClass('active');
 
     $(this).addClass('active');
 
     $('.textdisplay').removeClass('open');
 
     var contactNumber = $(this).index();
+    console.log(contactNumber);
 
-    $('.textdisplay').eq(contactNumber);
-    console.log($('.textdisplay').eq(contactNumber));
+    $('.textdisplay').eq(contactNumber).addClass('open');
+
 
   });
 

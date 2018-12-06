@@ -158,9 +158,7 @@
 
 }
 
-.textdisplay.open {
-  display: block;
-}
+
 .text {
   text-align: right;
   display: flex;
