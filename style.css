@@ -276,6 +276,10 @@
 
 }
 
+.dropmenuitem:hover {
+  background: #f4f5f5
+}
+
 .idbox:hover {
   background: #f4f5f5;
 }
@@ -405,6 +409,10 @@
   cursor: pointer;
 
 }
+
+.chatdropdownitem:hover {
+  background: #f4f5f5;
+}
 .answerdropdown {
   z-index: 1;
   display: none;
@@ -421,6 +429,10 @@
   height: calc(100% / 4);
   width: 100%;
 
+}
+
+.answerdropdownitem:hover {
+  background: #f4f5f5;
 }
 
 .chati {
