@@ -99,9 +99,6 @@ $(document).ready(function() {
       dropMenu.addClass('open');
 
     }
-
-
-
   });
 
 
@@ -158,8 +155,6 @@ $(document).ready(function() {
     var deleteMessage = $(this).parent().parent();
     deleteMessage.hide();
 
-
-
   });
 
   //Menu risposta
@@ -187,8 +182,6 @@ $(document).ready(function() {
 
     var deleteMessageAnswer = $(this).parent().parent();
     deleteMessageAnswer.hide();
-
-
 
   });
 
